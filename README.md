@@ -5,11 +5,13 @@ This is work in progress
 
 These instructions explain how I added an ESPHome monitor/controller into my Zehnder Comfoair Q-series MVHR unit. It is entirely based on the project by @yoziru at [yoziru project](https://github.com/yoziru/esphome-zehnder-comfoair/tree/main)
 
-The reason I produced this was that the project had a compile error for me as there seemed to be a depracated statement. I also am trying to create more detailed instructions as this was all new to me and I'm trying to fill in more detail for those who are not used to ESPHome. In doing this I did refactor the project Yaml file and one of it's dependents in order to put all the things you might want to change and external references in one place.
+The reason I produced this was that the project had a compile error for me as there seemed to be a depracated statement. I also am trying to create more detailed instructions as this was all new to me so I'm trying to fill in more detail for those who are not familair with ESPHome. 
+
+In doing this I did refactor the project Yaml file and one of it's dependents in order to put all the things you might want to change and external references in one place.
 
 These instructions assume you are using Home Assistant and that you have Wi-Fi reception where your MVHR unit is sited.
 
-Your Home Assistant will need a file manager add-on such as Studio Code Server 
+Your Home Assistant will need a file manager add-on such as Studio Code Server.
 
 ## Prerequisites Parts
 1.	AtomS3 Lite - ESP32 processor
