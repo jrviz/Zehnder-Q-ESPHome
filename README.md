@@ -74,7 +74,7 @@ You should now do the hardware build.
 
 ## Hardware build
 First remove the top “tray” of the MVHR unit. It just slides off.
-1.	Cut around 4cm of 4-core cable
+1.	Cut around 45-50cm of 4-core cable
 2.	Strip ends for both
  
 3.	Connect one end to plug for canbus interface as shown
@@ -87,8 +87,6 @@ First remove the top “tray” of the MVHR unit. It just slides off.
  
 
 6.	Plug the canbus interface into the mvhr cable
- 
-
  
 
 ## HA adoption
