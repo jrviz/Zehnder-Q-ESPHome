@@ -29,11 +29,15 @@ Download the files from this repository by clicking on “Code” in the top lef
 Unzip these files into a folder
 
 Using your file manager on Home Assistant you should see a folder called esphome at the top level of the home assistant configuration files
+
+![ESPHome Folder](./images/esphomefolder.png)
  
 From the folder with the downloaded files, copy in the the folders "boards" and "packages" into the top level of esphome
 
 Click on the boards folder and select the file m5stack-atoms3.yml
 Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a depracated feature)
+
+![Board Edit](./images/boardedit.png)
  
 ### Additional files
 Now go to [Additional Files](https://github.com/jrviz/Zehnder-Q-ESPHome) and download the files secrets.yaml.example master and new_base.yaml
@@ -46,7 +50,9 @@ On the last line of this file your will see a 32 character api security key Visi
 
 Copy the file  new_base.yml into the packages folder
 You should now have something like this:
- 
+
+![Full Folder](./images/fullfolder.png)
+
 Note that I changed the name of my updated file in this example.
 
 You should now have an edited secrets.yaml file, the master file, the new_base.yml file copied into the packagesfolder  and the edited m5stack-atoms3.yml in the boards folder
