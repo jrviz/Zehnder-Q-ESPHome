@@ -114,7 +114,7 @@ Copy from the docs\home-assistant folder of the yoziru files that the downloaded
 To put this into a dashboard add a section to a dashboard, edit the section and and open the yaml (three vertical dots at top right of the section in edit mode) and add the following yaml
 
 
-```
+```yaml
 type: grid
 cards:
   - type: heading
