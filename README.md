@@ -377,4 +377,4 @@ column_span: 1
 Replacing xxxxxxxxxxxxxx with your device name. Look at a a sensor for the MVHR unit to see this name as the compile options set will create Home Assistant entities of the form <device_name>_<mac_digits>
 
 ## Web Page
-The device also publishes a web page with the data and controls. JUst open a browser at the address assigned for the module.
+The device also publishes a web page with the data and controls. Just open a browser at the address assigned for the module.
