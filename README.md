@@ -104,9 +104,13 @@ That should be it. To check you can go into Settings / Devices and services and 
 ## Home Assistant Dashboard elements
 
 To add something like this to a dashboard
- 
-To build the graphic place the image in www/images
-To put this into a dashboard add a section and open the yaml (three vertical dots at top right of the section in edit mode) and add the following yaml
+
+### Set up background image
+In Home Assistant use the file manager to create a new folder called images under www 
+Copy from the docs\home-assistant folder of the yoziru files that the downloaded the file called ventilation.png into the new images folder
+
+###Dashboard section with image and buttons
+To put this into a dashboard add a section to a dashboard, edit the section and and open the yaml (three vertical dots at top right of the section in edit mode) and add the following yaml
 
 
 '''
@@ -119,7 +123,7 @@ cards:
       columns: full
       rows: 1
   - type: picture-elements
-    image: /local/images/v.png
+    image: /local/images/ventilation.png
     style: |
       ha-card { height: 150px !important; }
     elements:
