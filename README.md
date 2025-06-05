@@ -34,7 +34,8 @@ Using your file manager on Home Assistant you should see a folder called esphome
  
 From the folder with the downloaded files, copy in the the folders "boards" and "packages" into the top level of esphome
 
-Click on the boards folder and select the file m5stack-atoms3.yml
+Click on the boards folder and select the file m5stack-atoms3.yml.
+
 Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a depracated feature)
 
 ![Board Edit](./images/boardedit.png)
@@ -53,9 +54,9 @@ You should now have something like this:
 
 ![Full Folder](./images/fullfolder.png)
 
-Note that I changed the name of my updated file in this example.
+Note that I changed the name of my updated file in this example. Yours will be zehnder-comfoair-q-m5stack-atoms3-updated.yml unless you change it.
 
-You should now have an edited secrets.yaml file, the master file, the new_base.yml file copied into the packagesfolder  and the edited m5stack-atoms3.yml in the boards folder
+You should now have an edited secrets.yaml file, the zehnder-comfoair-q-m5stack-atoms3-updated.yml, the new_base.yml file copied into the packages folder and the edited m5stack-atoms3.yml in the boards folder
 
 ## Prepare image for AtomS3 Lite
 In your Home Assist go to  Settings / Add-ons
