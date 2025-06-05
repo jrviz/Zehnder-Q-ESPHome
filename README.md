@@ -17,11 +17,11 @@ Your Home Assistant will need a file manager add-on such as Studio Code Server
 3.	4-core cable - Canbus cable with red/black/yellow/white cores is the best thing
 4.	A USB-C cable to connect to the AtomS3 Lite to your PC/Mac for program load. This must be a data cable – some are just charge cables.
 
-##Home Assistant Add-on
+## Home Assistant Add-on
 For your Home Assistant system install ESPHOME device builder as an add-on. Go to Settings / Add-ons then press the Add-on Store button on the bottom right. Search for “ESPHome Device Builder” and install it.
 
-##Software build
-###Yoziru Files
+## Software build
+### Yoziru Files
 On your PC go to [yoziru project](https://github.com/yoziru/esphome-zehnder-comfoair/tree/main)
 
 Download the files from this repository by clicking on “Code” in the top left and then with the green “Code” drop down button select “Download Zip”
@@ -35,7 +35,7 @@ From the folder with the downloaded files, copy in the the folders "boards" and 
 Click on the boards folder and select the file m5stack-atoms3.yml
 Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a depracated feature)
  
-###Additional files
+### Additional files
 Now go to [Additional Files](https://github.com/jrviz/Zehnder-Q-ESPHome) and download the files secrets.yaml.example master and new_base.yaml
 
 Copy zehnder-comfoair-q-m5stack-atoms3-updated.yml to the top level of the esphome folder. You can edit this file to change the device name and description
@@ -72,7 +72,7 @@ You should now do the hardware build.
  
 
 
-Hardware build
+## Hardware build
 First remove the top “tray” of the MVHR unit. It just slides off.
 1.	Cut around 4cm of 4-core cable
 2.	Strip ends for both
@@ -91,7 +91,7 @@ First remove the top “tray” of the MVHR unit. It just slides off.
 
  
 
-HA adoption
+## HA adoption
 The device should appear under the HA Esp home device - discovered. Click Add and it will ask for the encryption key. Copy this from the top level yaml file (without quotes) and paste into this field. 
 The device should show live parameters and controls. The atom s3 also publishes a web page with data and controls. It is a simple port 80 web page on its ip address.
 
@@ -103,7 +103,7 @@ At this stage you will need the api encryption key which is in the secrets.yaml 
  
 That should be it. To check you can go into Settings / Devices and services and you should see ESPHome as a device. Open this and click on the device and you should see live data.
 
-##Home Assistant Dashboard elements
+## Home Assistant Dashboard elements
 
 To add something like this to a dashboard
  
