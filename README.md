@@ -131,6 +131,7 @@ That should be it. To check you can go into Settings / Devices and services and 
 ## Home Assistant Dashboard elements
 
 To add something like this to a dashboard
+
 ![dashboard](./images/dashboard.png)
 
 ### Set up background image
