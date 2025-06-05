@@ -59,7 +59,7 @@ Note that I changed the name of my updated file in this example. Yours will be z
 You should now have an edited secrets.yaml file, the zehnder-comfoair-q-m5stack-atoms3-updated.yml, the new_base.yml file copied into the packages folder and the edited m5stack-atoms3.yml in the boards folder
 
 ## Prepare image for AtomS3 Lite
-In your Home Assist go to  Settings / Add-ons
+In your Home Assistant go to  Settings / Add-ons
 Select the ESPHome Device builder and then select the ”Open Web UI” option
 You should now see your project in the dashboard
 
@@ -67,15 +67,19 @@ Select three dots menu in botton right and select Validate
 If there is a success message at end (last line says INFO Configuration is valid!) then select Install from the three dots menu
 This will pop up options. Select "Plug into this computer" This will now build. It will take a while and have a spinning cursor next to "preparing download…" as step 1. Don't lose patience this will take 10's of minutes.
 
-When this has finished step 1 will show a download option. When this is pressed you will get two options. Select the "Factory Format (previously Modern)" option. 
+When this has finished, step 1 will show a download option. When this is pressed you will get two options. Select the "Factory Format (previously Modern)" option. 
+
 This will download a file to your PC.
 
 Select Step 2. Open ESPHome Web
-Plug your atoms3 into the usb-c cable attached to your PC, you should see the device shown when your press the "CONNECT" although it will just have a hardware name. Select it and press "connect"
+
+Plug your atomS3lite into the usb-c cable attached to your PC, you should see the device shown when your press the "CONNECT" although it will just have a hardware name. Select the device and press "connect"
+
 Then press "Install"
+
 This will load the program onto the unit
 
-You should now do the hardware build.
+You should now go onto the hardware build.
  
 
 
@@ -122,7 +126,7 @@ You should see your device as Discovered in the top area
 Select Add and then confirm with Submit
 At this stage you will need the api encryption key which is in the secrets.yaml file. Copy this text (not the quotes) into the api field and press Submit
  
-That should be it. To check you can go into Settings / Devices and services and you should see ESPHome as a device. Open this and click on the device and you should see live data.
+That should be it. To check you can go into Settings / Devices and services and you should see ESPHome as a device. Open this and click on the device and you should see live data. NOTE: I have seen instances where it takes alittle while to populate the data but it is usually very quick.
 
 ## Home Assistant Dashboard elements
 
@@ -366,3 +370,6 @@ column_span: 1
 ```
 
 Replacing xxxxxxxxxxxxxx with your device name. Look at a a sensor for the MVHR unit to see this name as the compile options set will create Home Assistant entities of the form <device_name>_<mac_digits>
+
+## Web Page
+The device also publishes a web page with the data and controls. JUst open a browser at the address assigned for the module.
