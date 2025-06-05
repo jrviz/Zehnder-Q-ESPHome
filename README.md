@@ -74,6 +74,7 @@ You should now do the hardware build.
 
 ## Hardware build
 First remove the top “tray” of the MVHR unit. It just slides off.
+![MVHR Top Tray](./images/MVHRtop.jpg)
 1.	Cut around 45-50cm of 4-core cable
 2.	Strip ends for both
  
