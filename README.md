@@ -75,19 +75,12 @@ You should now do the hardware build.
 ## Hardware build
 First remove the top “tray” of the MVHR unit. It just slides off.
 ![MVHR Top Tray](./images/MVHRtop.jpg)
-1.	Cut around 45-50cm of 4-core cable
+1.	Cut around 45-50cm of 4-core cable ![Cable](./cable.jpg)
 2.	Strip ends for both
- 
-3.	Connect one end to plug for canbus interface as shown
- 
-
-4.	Unplug this connection from canbus unit and connect into mvhr. Put the end cable tails into the top hole while pressing the lower button in. when released this grips the cable 
- 
-
-5.	Plug the canbus interface into the atoms3 using the supplied cable
- 
-
-6.	Plug the canbus interface into the mvhr cable
+3.	Connect one end to plug for canbus interface as shown ![Canbus Interface](./CanbusInterface.jpg)
+4.	Unplug this connection from canbus unit and connect into mvhr. Put the end cable tails into the top hole while pressing the lower button in, when released this grips the cable ![Connect](./CanbusPLug.jpg) ![Connections](./Connections.jpg)
+5.	Plug the canbus interface into the atoms3 using the supplied cable ![Modules](./Modules.jpg)
+6.	Plug the canbus interface into the mvhr cable ![Assembled](./Assembled.jpg)
  
 
 ## HA adoption
