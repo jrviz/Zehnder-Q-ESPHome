@@ -104,7 +104,7 @@ That should be it. To check you can go into Settings / Devices and services and 
 ## Home Assistant Dashboard elements
 
 To add something like this to a dashboard
-!(/images/dashboard.png)
+!(./images/dashboard.png)
 
 ### Set up background image
 In Home Assistant use the file manager to create a new folder called images under www 
