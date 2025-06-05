@@ -113,7 +113,7 @@ Copy from the docs\home-assistant folder of the yoziru files that the downloaded
 To put this into a dashboard add a section to a dashboard, edit the section and and open the yaml (three vertical dots at top right of the section in edit mode) and add the following yaml
 
 
-'''
+```
 type: grid
 cards:
   - type: heading
@@ -128,74 +128,74 @@ cards:
       ha-card { height: 150px !important; }
     elements:
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_fan_level
+        entity: sensor.xxxxxxxxxxxxxx_fan_level
         style:
           top: 49%
           left: 73%
           color: black
           font-size: 10px
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_supply_fan_flow
+        entity: sensor.xxxxxxxxxxxxxx_supply_fan_flow
         style:
           top: 59%
           left: 73%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_exhaust_fan_flow
+        entity: sensor.xxxxxxxxxxxxxx_exhaust_fan_flow
         style:
           top: 59%
           left: 27%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_extract_air_temperature
+        entity: sensor.xxxxxxxxxxxxxx_extract_air_temperature
         style:
           top: 20%
           left: 91%
           color: darkred
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_extract_air_humidity
+        entity: sensor.xxxxxxxxxxxxxx_extract_air_humidity
         style:
           top: 28%
           left: 89%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_supply_air_temperature
+        entity: sensor.xxxxxxxxxxxxxx_supply_air_temperature
         style:
           top: 76.2%
           left: 91%
           color: darkred
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_supply_air_humidity
+        entity: sensor.xxxxxxxxxxxxxx_supply_air_humidity
         style:
           top: 84.6%
           left: 89%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_outdoor_air_temperature
+        entity: sensor.xxxxxxxxxxxxxx_outdoor_air_temperature
         style:
           top: 20%
           left: 13%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_outdoor_air_humidity
+        entity: sensor.xxxxxxxxxxxxxx_outdoor_air_humidity
         style:
           top: 28%
           left: 11%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_exhaust_air_temperature
+        entity: sensor.xxxxxxxxxxxxxx_exhaust_air_temperature
         style:
           top: 76.2%
           left: 13%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_exhaust_air_humidity
+        entity: sensor.xxxxxxxxxxxxxx_exhaust_air_humidity
         style:
           top: 84.6%
           left: 11%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_bypass_activation_mode
+        entity: sensor.xxxxxxxxxxxxxx_bypass_activation_mode
         prefix: "Bypass "
         style:
           color: black
@@ -204,42 +204,42 @@ cards:
           font-size: 80%
       - type: conditional
         conditions:
-          - entity: sensor.xxxxxxxxxxxxxx_952da8_bypass_state
+          - entity: sensor.xxxxxxxxxxxxxx_bypass_state
             state_not: "0"
         elements:
           - type: state-label
-            entity: sensor.xxxxxxxxxxxxxx_952da8_bypass_state
+            entity: sensor.xxxxxxxxxxxxxx_bypass_state
             style:
               color: black
               top: 18%
               left: 50%
       - type: conditional
         conditions:
-          - entity: sensor.xxxxxxxxxxxxxx_952da8_next_bypass_change_in
+          - entity: sensor.xxxxxxxxxxxxxx_next_bypass_change_in
             state_not: n/a
         elements:
           - type: state-label
-            entity: sensor.xxxxxxxxxxxxxx_952da8_next_bypass_change_in
+            entity: sensor.xxxxxxxxxxxxxx_next_bypass_change_in
             style:
               color: black
               top: 33%
               left: 50%
               font-size: 80%
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_operating_mode
+        entity: sensor.xxxxxxxxxxxxxx_operating_mode
         style:
           top: 72%
           left: 50%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_profile_target_temperature
+        entity: sensor.xxxxxxxxxxxxxx_profile_target_temperature
         style:
           color: black
           top: 60%
           left: 50%
           font-size: 70%
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_temperature_profile
+        entity: sensor.xxxxxxxxxxxxxx_temperature_profile
         style:
           color: black
           top: 66%
@@ -247,32 +247,32 @@ cards:
           font-size: 70%
       - type: conditional
         conditions:
-          - entity: sensor.xxxxxxxxxxxxxx_952da8_next_fan_change_in
+          - entity: sensor.xxxxxxxxxxxxxx_next_fan_change_in
             state_not: n/a
         elements:
           - type: state-label
-            entity: sensor.xxxxxxxxxxxxxx_952da8_next_fan_change_in
+            entity: sensor.xxxxxxxxxxxxxx_next_fan_change_in
             style:
               color: black
               top: 80%
               left: 50%
               font-size: 80%
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_filter_replacement_remaining_days
+        entity: sensor.xxxxxxxxxxxxxx_filter_replacement_remaining_days
         prefix: "Filter change: "
         style:
           top: 94%
           left: 50%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_power
+        entity: sensor.xxxxxxxxxxxxxx_power
         prefix: "Power "
         style:
           top: 6%
           left: 50%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_952da8_running_mean_outdoor_temperature
+        entity: sensor.xxxxxxxxxxxxxx_running_mean_outdoor_temperature
         prefix: "RMOT "
         style:
           top: 6.5%
@@ -280,7 +280,7 @@ cards:
           color: grey
       - type: conditional
         conditions:
-          - entity: binary_sensor.xxxxxxxxxxxxxx_952da8_heating_season
+          - entity: binary_sensor.xxxxxxxxxxxxxx_heating_season
             state: "on"
         elements:
           - type: icon
@@ -291,7 +291,7 @@ cards:
               left: 5%
       - type: conditional
         conditions:
-          - entity: binary_sensor.xxxxxxxxxxxxxx_952da8_cooling_season
+          - entity: binary_sensor.xxxxxxxxxxxxxx_cooling_season
             state: "on"
         elements:
           - type: icon
@@ -303,41 +303,42 @@ cards:
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_boost_15_min
+    entity: button.xxxxxxxxxxxxxx_boost_15_min
     name: Boost 15m
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_boost_60_min
+    entity: button.xxxxxxxxxxxxxx_boost_60_min
     name: Boost 1hr
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_boost_3h
+    entity: button.xxxxxxxxxxxxxx_boost_3h
     name: Boost 3hr
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_boost_off
+    entity: button.xxxxxxxxxxxxxx_boost_off
     name: Boost Off
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_bypass_on_1h
+    entity: button.xxxxxxxxxxxxxx_bypass_on_1h
     name: Bypass 1hr
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_bypass_on_12h
+    entity: button.xxxxxxxxxxxxxx_bypass_on_12h
     name: Bypass 12hr
   - show_name: true
     show_icon: true
     type: button
-    entity: button.xxxxxxxxxxxxxx_952da8_bypass_auto
+    entity: button.xxxxxxxxxxxxxx_bypass_auto
     name: Bypass Auto
   - type: custom:mushroom-select-card
-    entity: select.xxxxxxxxxxxxxx_952da8_temperature_profile
+    entity: select.xxxxxxxxxxxxxx_temperature_profile
     name: Temperature Profile
 column_span: 1
-'''
-Replacing xxxxxxxxxxxxxx with your device name. Look at a asensor for the MVHR unit to see this structure.
+```
+
+Replacing xxxxxxxxxxxxxx with your device name. Look at a a sensor for the MVHR unit to see this name as the compile options set will create Home Assistant entities of the form <device_name>_<mac_digits>
