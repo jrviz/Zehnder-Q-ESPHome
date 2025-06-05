@@ -1,5 +1,5 @@
 # Zehnder-Q-ESPHome
-Customisation and instructions for project created by @yoziru
+Customisation and instructions for Home Assistant ESPHome project created by @yoziru which provides an integration with Zehnder Q-series MVHR units.
 
 This is work in progress
 
