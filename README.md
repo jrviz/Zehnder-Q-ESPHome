@@ -99,11 +99,11 @@ Plug the canbus interface into the atoms3 using the supplied cable
 ![Modules](./images/Modules.jpg)
 
 
-Plug the canbus interface plug connected into the MVHR into the modules
+Plug the canbus interface plug, which is connected into the MVHR, into the modules
 
 ![Assembled](./images/Assembled.jpg)
  
-
+Replace the lid 
 
 ## HA adoption
 The device should appear under the HA Esp home device - discovered. Click Add and it will ask for the encryption key. Copy this from the top level yaml file (without quotes) and paste into this field. 
