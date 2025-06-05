@@ -138,6 +138,8 @@ To add something like this to a dashboard
 In Home Assistant use the file manager to create a new folder called images under www 
 Copy from the docs\home-assistant folder of the yoziru files that the downloaded the file called ventilation.png into the new images folder
 
+![Image Folder](./images/imagefolder.png)
+
 ###Dashboard section with image and buttons
 To put this into a dashboard add a section to a dashboard, edit the section and and open the yaml (three vertical dots at top right of the section in edit mode) and add the following yaml
 
