@@ -36,7 +36,7 @@ Using your file manager on Home Assistant you should see a folder called esphome
  
 From the folder with the downloaded files, copy in the the folders "boards" and "packages" into the top level of esphome
 
-Click on the boards folder and select the file m5stack-atoms3.yml.
+Click on the boards folder and select the file **m5stack-atoms3.yml**.
 
 Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a depracated feature)
 
@@ -44,26 +44,26 @@ Edit line 41 of the file to put a # (comment out) at the start of the line (this
  
 ### Project build files files
 
-At this point you can copy in zehnder-comfoair-q-m5stack-atoms3.dashboard.yml and zehnder-comfoair-q-m5stack-atoms3.yml from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). You can then jum down to **Prepare Image for AtomS3 Lite** This approach puts two files in the ERSPHome dashboard and the one to Validate/Install from is the dashboard file.
+At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). You can then jump down to **Prepare Image for AtomS3 Lite** This approach puts two files in the ERSPHome dashboard and the one to Validate/Install from is the dashboard file.
 
 Alternatively you can use the additional files here which are the same thing but I have some some simplification (to the project file and the base package file file) and rationalisation (to put all the things which you might want to chnage and external references inthe top level file)
 
-To do this go to [Additional Files](https://github.com/jrviz/Zehnder-Q-ESPHome) and download the files secrets.yaml.example,  zehnder-comfoair-q-m5stack-atoms3-updated.yml and new_base.yaml
+To do this go to [Additional Files](https://github.com/jrviz/Zehnder-Q-ESPHome) and download the files **secrets.yaml.example**,  **zehnder-comfoair-q-m5stack-atoms3-updated.yml** and **new_base.yaml**
 
-Copy zehnder-comfoair-q-m5stack-atoms3-updated.yml to the top level of the esphome folder. You can edit this file to change the device name and description
+Copy **zehnder-comfoair-q-m5stack-atoms3-updated.yml** to the top level of the esphome folder. You can edit this file to change the device name and description
 
-Copy in secrets.yaml.example into the top level of esphome and rename it to secrets.yaml
+Copy in **secrets.yaml.example** into the top level of esphome and rename it to **secrets.yaml**
 Select and edit this file to put your wifi ssid and password detail in ( top 2 lines)
 On the last line of this file your will see a 32 character api security key Visit the link in the comment and the page will show a new key (it generates a new one every time you visit that page). Copy that key and replace the one that is already there.
 
-Copy the file  new_base.yml into the packages folder
+Copy the file **new_base.yml** into the packages folder
 You should now have something like this:
 
 ![Full Folder](./images/fullfolder.png)
 
 Note that I changed the name of my updated file in this example. Yours will be zehnder-comfoair-q-m5stack-atoms3-updated.yml unless you change it.
 
-You should now have an edited secrets.yaml file, the zehnder-comfoair-q-m5stack-atoms3-updated.yml, the new_base.yml file copied into the packages folder and the edited m5stack-atoms3.yml in the boards folder
+You should now have an edited **secrets.yaml** file, the **zehnder-comfoair-q-m5stack-atoms3-updated.yml**, the **new_base.yml** file copied into the packages folder and the edited **m5stack-atoms3.yml** in the boards folder
 
 ## Prepare image for AtomS3 Lite
 In your Home Assistant go to  Settings / Add-ons
