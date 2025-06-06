@@ -337,36 +337,50 @@ cards:
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_boost_15_min
+    tap_action:
+      action: toggle
     name: Boost 15m
   - show_name: true
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_boost_60_min
+    tap_action:
+      action: toggle
     name: Boost 1hr
   - show_name: true
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_boost_3h
+    tap_action:
+      action: toggle
     name: Boost 3hr
   - show_name: true
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_boost_off
+    tap_action:
+      action: toggle
     name: Boost Off
   - show_name: true
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_bypass_on_1h
+    tap_action:
+      action: toggle
     name: Bypass 1hr
   - show_name: true
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_bypass_on_12h
+    tap_action:
+      action: toggle
     name: Bypass 12hr
   - show_name: true
     show_icon: true
     type: button
     entity: button.xxxxxxxxxxxxxx_bypass_auto
+    tap_action:
+      action: toggle
     name: Bypass Auto
   - type: custom:mushroom-select-card
     entity: select.xxxxxxxxxxxxxx_temperature_profile
