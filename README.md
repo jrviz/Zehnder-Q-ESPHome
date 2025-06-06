@@ -123,11 +123,7 @@ Plug the canbus interface plug, which is connected into the MVHR, into the modul
  
 Replace the lid 
 
-## HA adoption
-The device should appear under the HA Esp home device - discovered. Click Add and it will ask for the encryption key. Copy this from the top level yaml file (without quotes) and paste into this field. 
-The device should show live parameters and controls. The atom s3 also publishes a web page with data and controls. It is a simple port 80 web page on its ip address.
-
-##Add device to Home Assistant
+## Add device to Home Assistant
 Go into Home Assistant Settings / Devices and services
 You should see your device as Discovered in the top area
 Select Add and then confirm with Submit
