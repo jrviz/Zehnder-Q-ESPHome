@@ -1,13 +1,11 @@
 # Zehnder-Q-ESPHome
 Customisation and instructions for Home Assistant ESPHome project created by @yoziru which provides an integration with Zehnder Q-series MVHR units.
 
-This is work in progress
-
 These instructions explain how I added an ESPHome monitor/controller into my Zehnder Comfoair Q-series MVHR unit. It is entirely based on the project by @yoziru at [yoziru project](https://github.com/yoziru/esphome-zehnder-comfoair/tree/main)
 
-The reason I produced this was that the project had a compile error for me as there seemed to be a depracated statement. I also am trying to create more detailed instructions as this was all new to me so I'm trying to fill in more detail for those who are not familair with ESPHome. 
+The reason I produced this was that the project had a compile error for me as there seemed to be a depracated statement. I also am trying to create more detailed instructions as this was all new to me so it took a while to work it all out. The aim of this is to fill in some more detail for those who are not familair with ESPHome. 
 
-In doing this I did refactor the project Yaml file and one of it's dependents in order to put all the things you might want to change and external references in one place.
+In doing this I did refactor the project Yaml file and one of it's dependents in order to put all the things you might want to change and external references in one place. You don't have to do this to make it work. The file chnages you NEED to make are the edit to the **m5stack-atoms3.yml** file and setting up your secrets.yaml file.
 
 These instructions assume you are using Home Assistant and that you have Wi-Fi reception where your MVHR unit is sited.
 
@@ -23,7 +21,7 @@ Your Home Assistant will need a file manager add-on such as Studio Code Server.
 For your Home Assistant system install ESPHOME device builder as an add-on. Go to Settings / Add-ons then press the Add-on Store button on the bottom right. Search for “ESPHome Device Builder” and install it.
 
 ## Software build
-### Yoziru Files
+### Copying in Yoziru Files
 On your PC go to [yoziru project](https://github.com/yoziru/esphome-zehnder-comfoair/tree/main)
 
 Download the files from this repository by clicking on “Code” in the top left and then with the green “Code” drop down button select “Download Zip”
@@ -36,13 +34,15 @@ Using your file manager on Home Assistant you should see a folder called esphome
  
 From the folder with the downloaded files, copy in the the folders "boards" and "packages" into the top level of esphome
 
+## Editing board file to remove compile error
+
 Click on the boards folder and select the file **m5stack-atoms3.yml**.
 
-Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a depracated feature)
+Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a feature not supported in the latest idf framework)
 
 ![Board Edit](./images/boardedit.png)
  
-### Project build files files
+### Project build files
 
 At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). You can then jump down to **Prepare Image for AtomS3 Lite** This approach puts two files in the ERSPHome dashboard and the one to Validate/Install from is the dashboard file.
 
