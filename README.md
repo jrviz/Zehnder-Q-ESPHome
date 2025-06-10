@@ -5,7 +5,7 @@ These instructions explain how I added an ESPHome monitor/controller into my Zeh
 
 The reason I produced this was that the project had a compile error for me as there seemed to be a depracated statement. I also am trying to create more detailed instructions as this was all new to me so it took a while to work it all out. The aim of this is to fill in some more detail for those who are not familair with ESPHome. 
 
-In doing this I did refactor the project Yaml file and one of it's dependents in order to put all the things you might want to change and external references in one place. You don't have to do this to make it work. The file chnages you NEED to make are the edit to the **m5stack-atoms3.yml** file and setting up your secrets.yaml file.
+In doing this I did refactor the project Yaml file and one of it's dependents in order to put all the things you might want to change and external references in one place. You don't have to do this to make it work. The only file changes you NEED to make are the edit to the **m5stack-atoms3.yml** file and setting up your secrets.yaml file.
 
 These instructions assume you are using Home Assistant and that you have Wi-Fi reception where your MVHR unit is sited.
 
