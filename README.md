@@ -44,7 +44,9 @@ Edit line 41 of the file to put a # (comment out) at the start of the line (this
  
 ### Project build files
 
-At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). You can then jump down to **Prepare Image for AtomS3 Lite** This approach puts two files in the ERSPHome dashboard and the one to Validate/Install from is the dashboard file.
+At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). This approach puts two files (plus the secrets.yaml file) in the ERSPHome dashboard and the one to Validate/Install from is the dashboard file. You can then jump down to **Prepare Image for AtomS3 Lite**
+
+### Alternate Project Files
 
 Alternatively you can use the additional files here which are the same thing but I have some some simplification (to the project file and the base package file) and rationalisation (to put all the things which you might want to change and external references inthe top level file)
 
