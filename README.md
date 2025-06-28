@@ -48,7 +48,7 @@ At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml*
 
 ### Alternate Project Files
 
-Alternatively you can use the additional files here which are the same thing but I have some some simplification (to the project file and the base package file) and rationalisation (to put all the things which you might want to change and external references inthe top level file)
+Alternatively you can use the additional files here which are the same thing but I have some simplification (to the project file and the base package file) and rationalisation (to put all the things which you might want to change and external references inthe top level file)
 
 To do this go to [Additional Files](https://github.com/jrviz/Zehnder-Q-ESPHome) and download the files **secrets.yaml.example**,  **zehnder-comfoair-q-m5stack-atoms3-updated.yml** and **new_base.yaml**
 
