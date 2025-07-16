@@ -446,12 +446,6 @@ cards:
     grid_options:
       columns: 6
       rows: 2
-  - show_name: false
-    show_icon: false
-    show_state: true
-    type: glance
-    entities:
-      - entity: input_text.mvhr_downstairs_status
 column_span: 1
 ```
 
