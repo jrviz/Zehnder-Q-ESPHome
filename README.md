@@ -153,162 +153,166 @@ To put this into a dashboard add a section to a dashboard, edit the section and 
 type: grid
 cards:
   - type: heading
-    heading: Downstairs MVHR
+    heading: MVHR
     heading_style: title
     grid_options:
       columns: full
       rows: 1
   - type: picture-elements
-    image: /local/images/ventilation.png
+    image: /local/images/v.png
     style: |
       ha-card { height: 150px !important; }
     elements:
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_fan_level
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_fan_level
         style:
-          top: 49%
+          top: 45%
           left: 73%
           color: black
-          font-size: 10px
+          font-size: 14px
+          font-weight: bold
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_supply_fan_flow
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_supply_fan_flow
         style:
-          top: 59%
+          top: 55%
           left: 73%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_exhaust_fan_flow
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_exhaust_fan_flow
         style:
-          top: 59%
+          top: 55%
           left: 27%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_extract_air_temperature
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_extract_air_temperature
         style:
           top: 20%
           left: 91%
           color: darkred
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_extract_air_humidity
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_extract_air_humidity
         style:
           top: 28%
           left: 89%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_supply_air_temperature
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_supply_air_temperature
         style:
           top: 76.2%
           left: 91%
           color: darkred
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_supply_air_humidity
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_supply_air_humidity
         style:
           top: 84.6%
           left: 89%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_outdoor_air_temperature
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_outdoor_air_temperature
         style:
           top: 20%
           left: 13%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_outdoor_air_humidity
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_outdoor_air_humidity
         style:
           top: 28%
           left: 11%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_exhaust_air_temperature
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_exhaust_air_temperature
         style:
           top: 76.2%
           left: 13%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_exhaust_air_humidity
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_exhaust_air_humidity
         style:
           top: 84.6%
           left: 11%
           color: "#4171b1"
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_bypass_activation_mode
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_bypass_activation_mode
         prefix: "Bypass "
         style:
           color: black
           top: 26%
           left: 50%
-          font-size: 80%
+          font-size: 90%
       - type: conditional
         conditions:
-          - entity: sensor.xxxxxxxxxxxxxx_bypass_state
+          - entity: sensor.zehnder_comfoair_q_d_xxxxxxx_bypass_state
             state_not: "0"
         elements:
           - type: state-label
-            entity: sensor.xxxxxxxxxxxxxx_bypass_state
+            entity: sensor.zehnder_comfoair_q_d_xxxxxxx_bypass_state
             style:
               color: black
               top: 18%
               left: 50%
       - type: conditional
         conditions:
-          - entity: sensor.xxxxxxxxxxxxxx_next_bypass_change_in
+          - entity: sensor.zehnder_comfoair_q_d_xxxxxxx_next_bypass_change_in
             state_not: n/a
         elements:
           - type: state-label
-            entity: sensor.xxxxxxxxxxxxxx_next_bypass_change_in
+            entity: sensor.zehnder_comfoair_q_d_xxxxxxx_next_bypass_change_in
             style:
               color: black
               top: 33%
               left: 50%
               font-size: 80%
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_operating_mode
-        style:
-          top: 72%
-          left: 50%
-          color: black
-      - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_profile_target_temperature
-        style:
-          color: black
-          top: 60%
-          left: 50%
-          font-size: 70%
-      - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_temperature_profile
-        style:
-          color: black
-          top: 66%
-          left: 50%
-          font-size: 70%
-      - type: conditional
-        conditions:
-          - entity: sensor.xxxxxxxxxxxxxx_next_fan_change_in
-            state_not: n/a
-        elements:
-          - type: state-label
-            entity: sensor.xxxxxxxxxxxxxx_next_fan_change_in
-            style:
-              color: black
-              top: 80%
-              left: 50%
-              font-size: 80%
-      - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_filter_replacement_remaining_days
-        prefix: "Filter change: "
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_operating_mode
         style:
           top: 94%
           left: 50%
           color: black
+          font-size: 100%
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_power
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_profile_target_temperature
+        style:
+          color: black
+          top: 72%
+          left: 50%
+          font-size: 100%
+      - type: state-label
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_temperature_profile
+        style:
+          color: black
+          top: 94%
+          left: 30%
+          font-size: 100%
+          font-weight: bold
+      - type: conditional
+        conditions:
+          - entity: sensor.zehnder_comfoair_q_d_xxxxxxx_next_fan_change_in
+            state_not: n/a
+        elements:
+          - type: state-label
+            entity: sensor.zehnder_comfoair_q_d_xxxxxxx_next_fan_change_in
+            style:
+              color: black
+              top: 94%
+              left: 75%
+              font-size: 100%
+      - type: state-label
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_filter_replacement_remaining_days
+        prefix: "Filter change: "
+        style:
+          top: 6.5%
+          left: 80%
+          color: black
+          font-size: 90%
+      - type: state-label
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_power
         prefix: "Power "
         style:
           top: 6%
           left: 50%
           color: black
       - type: state-label
-        entity: sensor.xxxxxxxxxxxxxx_running_mean_outdoor_temperature
+        entity: sensor.zehnder_comfoair_q_d_xxxxxxx_running_mean_outdoor_temperature
         prefix: "RMOT "
         style:
           top: 6.5%
@@ -316,7 +320,7 @@ cards:
           color: grey
       - type: conditional
         conditions:
-          - entity: binary_sensor.xxxxxxxxxxxxxx_heating_season
+          - entity: binary_sensor.zehnder_comfoair_q_d_xxxxxxx_heating_season
             state: "on"
         elements:
           - type: icon
@@ -327,7 +331,7 @@ cards:
               left: 5%
       - type: conditional
         conditions:
-          - entity: binary_sensor.xxxxxxxxxxxxxx_cooling_season
+          - entity: binary_sensor.zehnder_comfoair_q_d_xxxxxxx_cooling_season
             state: "on"
         elements:
           - type: icon
@@ -337,61 +341,123 @@ cards:
               top: 6%
               left: 5%
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_boost_15_min
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_boost_15_min
     tap_action:
       action: toggle
     name: Boost 15m
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px red;
+        }
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_boost_60_min
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_boost_60_min
     tap_action:
       action: toggle
     name: Boost 1hr
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px red;
+        }
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_boost_3h
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_boost_3h
     tap_action:
       action: toggle
     name: Boost 3hr
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px red;
+        }
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_boost_off
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_boost_off
     tap_action:
       action: toggle
     name: Boost Off
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px white;
+        }
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_bypass_on_1h
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_bypass_on_1h
     tap_action:
       action: toggle
     name: Bypass 1hr
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px green;
+        }
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_bypass_on_12h
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_bypass_on_12h
     tap_action:
       action: toggle
     name: Bypass 12hr
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px green;
+        }
   - show_name: true
-    show_icon: true
+    show_icon: false
     type: button
-    entity: button.xxxxxxxxxxxxxx_bypass_auto
+  - show_name: true
+    show_icon: false
+    type: button
+    entity: button.zehnder_comfoair_q_d_xxxxxxx_bypass_auto
     tap_action:
       action: toggle
     name: Bypass Auto
+    card_mod:
+      style: |
+        ha-card {
+          border-radius: 20px;
+          border: solid 2px white;
+        }
   - type: custom:mushroom-select-card
-    entity: select.xxxxxxxxxxxxxx_temperature_profile
+    entity: select.zehnder_comfoair_q_d_xxxxxxx_temperature_profile
     name: Temperature Profile
+    grid_options:
+      columns: 6
+      rows: 2
+  - type: custom:mushroom-select-card
+    entity: select.zehnder_comfoair_q_d_xxxxxxx_fan_speed
+    name: Fan Speed Downstairs
+    grid_options:
+      columns: 6
+      rows: 2
+  - show_name: false
+    show_icon: false
+    show_state: true
+    type: glance
+    entities:
+      - entity: input_text.mvhr_downstairs_status
 column_span: 1
 ```
 
-Replacing xxxxxxxxxxxxxx with your device name. Look at a a sensor for the MVHR unit to see this name as the compile options set will create Home Assistant entities of the form <device_name>_<mac_digits>
+Replacing xxxxxxx with your device name. Look at a a sensor for the MVHR unit to see this name as the compile options set will create Home Assistant entities of the form <device_name>_<mac_digits>_<entity_name>
+
+Note. I have used a mushroom select card to allow fan speed and temperature mode selection. If you don't use mushroom cards then you can create an alternative for these controls.
 
 ## Web Page
 The device also publishes a web page with the data and controls. Just open a browser at the address assigned for the module.
