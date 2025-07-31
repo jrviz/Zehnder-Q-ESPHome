@@ -65,7 +65,8 @@ You should now have something like this:
 
 Note that I changed the name of my updated file in this example. Yours will be zehnder-comfoair-q-m5stack-atoms3-updated.yml unless you change it.
 
-Note: I also chnaged the timer durations in sensors.yaml as they were udating every 0.5 seconds which seemed excessive. next_fan_change_in_raw had filter throttle value chnaged from 05.s to 15s. Similar change for the next_bypass_change_in_raw.
+I also changed the timer durations in sensors.yaml as they were updating every 0.5 seconds which seemed excessive. next_fan_change_in_raw had filter throttle value changed from 05.s to 15s. Similar change for the next_bypass_change_in_raw.
+
 You should now have an edited **secrets.yaml** file, the **zehnder-comfoair-q-m5stack-atoms3-updated.yml**, the **new_base.yml** file copied into the packages folder and the edited **m5stack-atoms3.yml** in the boards folder
 
 ## Prepare image for AtomS3 Lite
