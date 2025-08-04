@@ -1,5 +1,5 @@
 # Zehnder-Q-ESPHome
-Customisation and instructions for Home Assistant ESPHome project created by @yoziru which provides an integration with Zehnder Q-series MVHR units.
+Customisation and instructions for Home Assistant ESPHome project created by @yoziru which provides an integration with Zehnder Q-series MVHR units without needing a Zehnder Comfoconnect interface unit.
 
 These instructions explain how I added an ESPHome monitor/controller into my Zehnder Comfoair Q-series MVHR unit. It is entirely based on the project by @yoziru at [yoziru project](https://github.com/yoziru/esphome-zehnder-comfoair/tree/main)
 
