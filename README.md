@@ -11,11 +11,11 @@ These instructions assume you are using Home Assistant and that you have Wi-Fi r
 
 Your Home Assistant will need a file manager add-on such as Studio Code Server.
 
-## Prerequisites Parts
+## Hardware Parts
 1.	AtomS3 Lite - ESP32 processor
 2.	Mini CAN Unit (TJA1051T/3) - Canbus interface unit
 3.	4-core cable - Canbus cable with red/black/yellow/white cores is the best thing
-4.	A USB-C cable to connect to the AtomS3 Lite to your PC/Mac for program load. This must be a data cable – some are just charge cables.
+4.	A USB-C cable to connect to the AtomS3 Lite to your PC/Mac for program load. This **must** be a data cable – some are just charge cables.
 
 ## Home Assistant Add-on
 For your Home Assistant system install ESPHOME device builder as an add-on. Go to Settings / Add-ons then press the Add-on Store button on the bottom right. Search for “ESPHome Device Builder” and install it.
