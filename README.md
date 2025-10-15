@@ -38,7 +38,7 @@ From the folder with the downloaded files, copy in the the folders "boards" and 
 
 Click on the boards folder and select the file **m5stack-atoms3.yml**.
 
-Edit line 41 of the file to put a # (comment out) at the start of the line (this is to avoid a compile error for a feature not supported in the latest idf framework)
+Edit line 41 of the file (m5stack-atoms3.yml) to put a # (comment out) at the start of the line (this is to avoid a compile error for a feature not supported in the latest idf framework)
 
 ![Board Edit](./images/boardedit.png)
  
