@@ -44,7 +44,7 @@ Edit line 41 of the file (m5stack-atoms3.yml) to put a # (comment out) at the st
  
 ### Project build files
 
-At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). This approach puts two files (plus the secrets.yaml file) in the ERSPHome dashboard and the one to Validate/Install from is the dashboard file. You can then jump down to **Prepare Image for AtomS3 Lite**
+At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). This approach puts two files (plus the secrets.yaml file) in the ESPHome dashboard and the one to Validate/Install from is the dashboard file. The **zehnder-comfoair-q-m5stack-atoms3.yml** file can be edited to chnage the name etc.  You can then jump down to **Prepare Image for AtomS3 Lite**
 
 ### Alternate Project Files
 
