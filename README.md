@@ -21,6 +21,7 @@ Your Home Assistant will need a file manager add-on such as Studio Code Server.
 For your Home Assistant system install ESPHOME device builder as an add-on. Go to Settings / Add-ons then press the Add-on Store button on the bottom right. Search for “ESPHome Device Builder” and install it.
 
 ## Software build
+** EDITS COMING SOON AS REPO HAS BEEN UPDATED AND THIS SECTION WILL BE SIMPLIFIED **
 ### Copying in Yoziru Files
 On your PC go to [yoziru project](https://github.com/yoziru/esphome-zehnder-comfoair/tree/main)
 
