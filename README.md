@@ -35,21 +35,9 @@ Using your file manager on Home Assistant you should see a folder called esphome
  
 From the folder with the downloaded files, copy in the the folders "boards" and "packages" into the top level of esphome
 
-## Editing board file to remove compile error
-
-Click on the boards folder and select the file **m5stack-atoms3.yml**.
-
-Edit line 41 of the file (m5stack-atoms3.yml) to put a # (comment out) at the start of the line (this is to avoid a compile error for a feature not supported in the latest idf framework)
-
-![Board Edit](./images/boardedit.png)
- 
 ### Project build files
 
 At this point you can copy in **zehnder-comfoair-q-m5stack-atoms3.dashboard.yml** and **zehnder-comfoair-q-m5stack-atoms3.yml** from the Yoziru files and follow the instructions on secrets.yaml on the Yoziru gitlab pages (which are the same as below). This approach puts two files (plus the secrets.yaml file) in the ESPHome dashboard and the one to Validate/Install from is the dashboard file. The **zehnder-comfoair-q-m5stack-atoms3.yml** file can be edited to change the name etc.  You can then jump down to **Prepare Image for AtomS3 Lite**
-
-
-***NOTE: July 2026, the hard coded framework version numbers started to cause errors in the esphome device builder. I edited board.yml to remove the explicit espidf and platformio versions. This makes the build use current recommended versions. At this date this all compiled OK.***
-
 
 ### Alternate Project Files
 
